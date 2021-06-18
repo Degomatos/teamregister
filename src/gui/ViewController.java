@@ -93,8 +93,8 @@ public class ViewController implements Initializable{
 	private void showAll() {	
 		List<Jogador> list = jogadorDao.findAll();
 		for(Jogador jog: list)
-			System.out.println(jog);	
-		System.out.println();
+			System.out.println(jog);
+		
 		System.out.println();
 		clearTxtFields();
 	}

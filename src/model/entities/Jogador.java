@@ -74,8 +74,8 @@ public class Jogador {
 //toString
 	@Override
 	public String toString() {
-		return "Time "+team+":\n"+"Jogador "+name+" Idade: "+age+" Altura: "+String.format("%.2f", height)+" Jogando na posição: "+position
-				+" Modalidade: "+modality;
+		return "Time "+team+":\n"+"Jogador "+name+"; Idade: "+age+"; Altura: "+String.format("%.2f", height)+"; Jogando na posição: "+position
+				+"; Modalidade: "+modality;
 	}
 	
 	
