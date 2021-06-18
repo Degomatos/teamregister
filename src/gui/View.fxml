@@ -1,8 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.PointLight?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
-</AnchorPane>
-
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="485.0" prefWidth="624.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ViewController">
+   <children>
+      <TextFlow layoutX="211.0" layoutY="14.0" prefHeight="84.0" prefWidth="176.0">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="77.0" prefWidth="184.0" text="CADASTRO DE TIME" textAlignment="RIGHT" textFill="#c9c48b" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Impact" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </TextFlow>
+      <Button fx:id="buttonCadastrar" layoutX="108.0" layoutY="409.0" mnemonicParsing="false" onAction="#cadastrarTime" prefHeight="41.0" prefWidth="88.0" text="Cadastrar" />
+      <Label layoutX="32.0" layoutY="123.0" text="Nome:" textFill="WHITE" />
+      <TextField fx:id="txtJogador1Height" alignment="TOP_LEFT" layoutX="348.0" layoutY="140.0" prefHeight="28.0" prefWidth="223.0" promptText="Altura">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <TextField fx:id="txtJogador1Age" alignment="TOP_LEFT" layoutX="32.0" layoutY="185.0" prefHeight="28.0" prefWidth="239.0" promptText="Idade">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <TextField fx:id="txtJogador1Position" alignment="TOP_LEFT" layoutX="348.0" layoutY="185.0" prefHeight="28.0" prefWidth="223.0" promptText="Posição">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <Label layoutX="347.0" layoutY="123.0" />
+      <Label layoutX="348.0" layoutY="123.0" prefHeight="17.0" prefWidth="43.0" text="Altura:" textFill="WHITE" />
+      <Label layoutX="33.0" layoutY="167.0" text="Idade:" textFill="WHITE" />
+      <Label layoutX="348.0" layoutY="167.0" text="Posição:" textFill="WHITE" />
+      <TextField fx:id="txtJogador2Name" alignment="TOP_LEFT" layoutX="32.0" layoutY="298.0" prefHeight="28.0" prefWidth="239.0" promptText="nome">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <Label layoutX="32.0" layoutY="280.0" text="Nome:" textFill="WHITE" />
+      <TextField fx:id="txtJogador2Height" alignment="TOP_LEFT" layoutX="348.0" layoutY="298.0" prefHeight="28.0" prefWidth="223.0" promptText="Altura">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <TextField fx:id="txtJogador2Age" alignment="TOP_LEFT" layoutX="32.0" layoutY="343.0" prefHeight="28.0" prefWidth="239.0" promptText="Idade">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <TextField fx:id="txtJogador2Position" alignment="TOP_LEFT" layoutX="348.0" layoutY="343.0" prefHeight="28.0" prefWidth="223.0" promptText="Posição">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <Label layoutX="347.0" layoutY="280.0" prefHeight="17.0" prefWidth="43.0" text="Altura:" textFill="WHITE" />
+      <Label layoutX="32.0" layoutY="326.0" text="Idade:" textFill="WHITE" />
+      <Label layoutX="347.0" layoutY="326.0" text="Posição:" textFill="#ffeaea" />
+      <Label layoutX="278.0" layoutY="255.0" prefHeight="19.0" prefWidth="66.0" text="Jogador 2" textFill="#fffdfd">
+         <font>
+            <Font name="Ebrima" size="13.0" />
+         </font>
+      </Label>
+      <Line endX="421.0" endY="8.0" layoutX="177.0" layoutY="230.0" startX="-153.0" startY="8.0" />
+      <ComboBox fx:id="comboBoxModality" layoutX="420.0" layoutY="86.0" prefWidth="150.0" promptText="Modalidade" />
+      <Label layoutX="279.0" layoutY="102.0" prefHeight="19.0" prefWidth="66.0" text="Jogador 1" textFill="WHITE">
+         <font>
+            <Font name="Ebrima" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTeam" layoutX="48.0" layoutY="86.0" promptText="Digite o nome do Time" />
+      <PointLight layoutX="14.0" layoutY="14.0" lightOn="true">
+         <color>
+            <Color red="0.49803921580314636" green="1.0" />
+         </color>
+      </PointLight>
+      <QuadCurve controlX="2.0" controlY="81.0" endX="56.0" endY="148.0" fill="#a17318" layoutX="66.0" layoutY="337.0" startX="-66.0" startY="148.0" stroke="BLACK" strokeType="INSIDE" />
+      <QuadCurve controlX="-26.0" controlY="75.0" endX="64.0" fill="#ae7f2e" layoutX="560.0" startX="-50.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button fx:id="buttonShowAll" layoutX="398.0" layoutY="409.0" mnemonicParsing="false" onAction="#showAll" prefHeight="41.0" prefWidth="122.0" text="Mostrar Times" />
+      <Label layoutX="47.0" layoutY="65.0" text="Nome do Time" textFill="#f5f5f5" />
+      <TextFlow layoutX="5.0" layoutY="25.0" prefHeight="25.0" prefWidth="212.0" />
+      <TextField fx:id="txtJogador1Name" layoutX="32.0" layoutY="141.0" prefHeight="25.0" prefWidth="239.0" promptText="Nome" />
+   </children>
+</Pane>
